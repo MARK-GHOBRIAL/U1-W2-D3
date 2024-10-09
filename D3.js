@@ -127,7 +127,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     femaleCharacters.push(starWarsCharacters[i])
   }
 }
-console.log(femaleCharacters)
+console.log('female', femaleCharacters)
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
@@ -148,19 +148,24 @@ const eyeColor = {
 for (let i = 0; i < starWarsCharacters.length; i++) {
   switch (starWarsCharacters[i].eye_color) {
     case 'blue':
-      eyeColor.blue.push(starWarsCharacters[i].eye_color)
+      eyeColor.blue.push(starWarsCharacters[i])
+      break
 
     case 'yellow':
-      eyeColor.yellow.push(starWarsCharacters[i].eye_color)
+      eyeColor.yellow.push(starWarsCharacters[i])
+      break
 
     case 'brown':
-      eyeColor.brown.push(starWarsCharacters[i].eye_color)
+      eyeColor.brown.push(starWarsCharacters[i])
+      break
 
     case 'red':
-      eyeColor.red.push(starWarsCharacters[i].eye_color)
+      eyeColor.red.push(starWarsCharacters[i])
+      break
 
     case 'blue-gray':
-      eyeColor['blue-gray'].push(starWarsCharacters[i].eye_color)
+      eyeColor['blue-gray'].push(starWarsCharacters[i])
+      break
 
     default:
       console.log(
@@ -169,7 +174,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       )
   }
 }
-console.log(eyeColor)
+console.log('i colori sono', eyeColor)
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
