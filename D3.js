@@ -203,10 +203,10 @@ console.log("la massa totale e' di " + crewMass + ' Kg')
 */
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === 'n/a') {
-    starWarsCharacters[i].gender === 'robot'
+    starWarsCharacters[i].gender = 'robot'
   }
 }
-console.log(starWarsCharacters)
+console.log('i robot sono', starWarsCharacters)
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
